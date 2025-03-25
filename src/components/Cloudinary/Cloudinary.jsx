@@ -27,8 +27,7 @@ export const Cloudinary = () => {
       setMediaUrl(data.secure_url);
     };
 
-    console.log("CLOUD_NAME:", import.meta.env.VITE_CLOUD_NAME);
-    console.log("UPLOAD_PRESET:", import.meta.env.VITE_UPLOAD_PRESET);
+   
  
   
     return (
