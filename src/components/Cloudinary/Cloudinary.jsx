@@ -6,11 +6,7 @@ export const Cloudinary = () => {
   
     const handleUpload = async () => {
       if (!file) return alert("Selecciona un archivo");
-      // console.log("Archivo seleccionado:", file); // Verifica si hay un archivo
-      console.log("Variables de entorno:", import.meta.env); // 👀 Verifica las variables
 
-
-  
       const formData = new FormData();
       formData.append("file", file);
       formData.append("upload_preset",import.meta.env.VITE_UPLOAD_PRESET);
@@ -39,7 +35,7 @@ export const Cloudinary = () => {
         {mediaUrl && (
           <div style={{ marginTop: "20px" }}>
             {file?.type.includes("image") ? (
-              <img src={mediaUrl} alt="Subido" width="300" />
+              <img src={mediaUrl} alt="Imagen de postres" width="300" />
             ) : (
               <video width="300" controls>
                 <source src={mediaUrl} type={file.type} />
