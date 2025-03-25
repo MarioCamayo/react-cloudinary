@@ -8,7 +8,6 @@ function App() {
 
   return (
     <>
-      <h1>SUBIENDO IMAGENES CON CLOUDINARY</h1>
       <Cloudinary />
       <View />
     </>
